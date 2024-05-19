@@ -1,0 +1,46 @@
+.containerCard {
+    width: 300px;
+}
+
+.containerImg {
+    border-radius: 15px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    font-family: monospace;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.name {
+    height: 35px;
+}
+
+.price {
+    color: black;
+    font-size: 18px;
+    font-family: sans-serif;
+
+
+}
+
+.heart {
+    position: relative;
+    bottom: 20px;
+    left: 270px;
+}
+
+.hrr {
+    width: 200px;
+    margin-top: 25px;
+    margin-bottom: 22px;
+    height: 1px;
+    border: none;
+    background-image: linear-gradient(to right, transparent, #000, transparent);
+    background-size: 100% 2px;
+
+}

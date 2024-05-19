@@ -1,0 +1,58 @@
+.containerBanner1{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.containerBanner {
+  display: flex;
+  justify-content: space-between;
+  height: 350px;
+  width: 100vw;
+  background-color:#F4FAFF;
+  
+}
+
+.bannerHomeLeft {
+  border-radius: 50px 0px 0px 1400px;
+  
+}
+
+.bannerHomeRight {
+  border-radius: 0px 50px 1400px 0px;
+  
+}
+
+.textBanner {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Marissa';
+  line-height: 68px;
+  justify-content: center;
+  
+}
+
+.brilhe {
+  font-size: 60px;
+  color: black;
+  line-height: 55px;
+}
+
+.com {
+  font-size: 70px;
+  color: #CF995F;
+}
+
+.essencia {
+  font-size: 80px;
+  color: black;
+}
+.elegancia {
+  font-size: 60px;
+  color: #CF995F;
+}
+
+.verdadeira {
+  font-size: 80px;
+  color: black;
+}

@@ -1,0 +1,30 @@
+.containerMain{
+    display: flex;
+    flex-direction: column; 
+    margin-top: 137px; 
+}
+
+.conjTitulo {
+    font-family: "Pt Serif";
+    text-align: center;
+}
+
+.titulo {
+    font-size: 25px;
+    line-height: 1px;
+    letter-spacing: 1.2px;
+}
+
+.subTitulo{
+    font-size: 14px;
+}
+
+.conjTitulo hr {
+        width: 200px;
+        margin-top: 25px;
+        margin-bottom: 22px;
+        height: 1px;
+        border: none;
+        background-image: linear-gradient(to right, transparent, #000, transparent);
+        background-size: 100% 2px;
+}
