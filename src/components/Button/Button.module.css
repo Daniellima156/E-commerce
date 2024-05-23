@@ -1,38 +1,38 @@
 .containerButtons {
     display: flex;
-    gap: 5px;
-    margin-top: 20px;
+    gap: 0.313rem;
+    margin-top: 1.25rem;
     justify-content: center;
 }
 
-.buttonBuy button{
+.buttonBuy button {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 1.563rem;
     cursor: pointer;
     background-color: var(--cor-terciaria);
     color: var(--cor-quarta);
-    width: 200px;
-    height: 40px;
-    border-radius: 10px;
+    width: 12.5rem;
+    height: 2.5rem;
+    border-radius: 0.625rem;
     border: none;
     font-family: 'Roboto';
-    font-size: 15px;
-    letter-spacing: 1px; 
-   
+    font-size: 1.063rem;
+    letter-spacing: 0.063rem;
 }
 
 .buttonCart button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 50px;
+    margin-right: 3.125rem;
     cursor: pointer;
     color: var(--cor-quarta);
     background-color: #096746;
-    width: 50px;
-    height: 40px;
-    border-radius: 10px;
+    width: 3.125rem;
+    height: 2.5rem;
+    border-radius: 0.625rem;
     border: none;
-    font-size: 19px;
+    font-size: 1.188rem;
 }

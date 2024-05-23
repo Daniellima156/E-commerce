@@ -4,7 +4,6 @@ import product3 from './joia3.png'
 import product4 from './joia4.png'
 
 
-
 const productOne = [
     {
       id: 1,
@@ -33,5 +32,8 @@ const productOne = [
       }
       
   ];
+
+  
+
 
   export default productOne;

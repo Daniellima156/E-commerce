@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'Marissa'; /* Defina um nome para sua fonte */
+    src: url('caminho/para/sua/fonte.woff2') format('woff2'), /* Caminho para o arquivo WOFF2 */
+         url('./Fontes/Morissa.ttf') format('truetype'); /* Caminho para o arquivo WOFF */
+    /* Se necessário, adicione mais formatos de fonte aqui, como TTF ou EOT */
+}
+
+@font-face {
+    font-family: 'Zefani'; /* Defina um nome para sua fonte */
+    src: url('caminho/para/sua/fonte.woff2') format('woff2'), /* Caminho para o arquivo WOFF2 */
+         url('./Fontes/Zefani.otf') format('opentype'); /* Caminho para o arquivo WOFF */
+    /* Se necessário, adicione mais formatos de fonte aqui, como TTF ou EOT */
+}
+
+
+
+:root {
+    --cor-primaria: #E8ddd0;
+    --cor-secundaria: #F4FAFF;
+    --cor-terciaria: black;
+    --cor-quarta: #F5F5F5;
+}
+
+body {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    height: 5000px;
+    font-family: 'Pt serif', 'Times New Roman', Times, serif;
+ 
+   
+    
+}
+ul {
+    list-style: none;
+   
+}
+
+a:link,
+a:visited {
+    color: inherit; /* Define a cor do link para herdar a cor do elemento pai */
+    text-decoration: none; /* Remove sublinhado padrão */
+}
+
+
+
+
+
+.swiper-slide{
+   
+}
