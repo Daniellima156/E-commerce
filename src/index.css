@@ -23,6 +23,7 @@
     --cor-secundaria: #F4FAFF;
     --cor-terciaria: black;
     --cor-quarta: #F5F5F5;
+    --cor-quinta: #F4FAFF;
 }
 
 body {
@@ -38,6 +39,7 @@ body {
 }
 ul {
     list-style: none;
+    padding: 0px;
    
 }
 

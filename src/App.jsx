@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Tittle from './components/Tittle/Tittle';
 import Cards from './components/Cards/Cards';
+import Footer from "./components/Footer/Footer"
 
 import Home from './Pages/Home';
 import Login from './Pages/Login';
@@ -22,6 +23,7 @@ function App() {
           <Route path='/Login' element={<Login />}/>
           
         </Routes>
+        <Footer/>
         
       </BrowserRouter>
 

@@ -2,8 +2,10 @@
     height: 28.75rem;
     width: 16.25rem;
     border-radius: 1.5625rem;
-    overflow: hidden; 
-    
+    overflow: hidden;
+    margin-left: 7rem;
+    max-width: 100%;
+
 }
 
 .containerUp {
@@ -15,9 +17,7 @@
     border-radius: 0.3125rem;
 }
 
-.containerUp img {
-    max-width: 100%; 
-}
+
 
 .containerDown {
     background-color: #F4FAFF;
@@ -34,7 +34,7 @@
     font-family: monospace;
     margin-left: 0.625rem;
     font-size: 0.875rem;
-    line-height: 1.125rem;  
+    line-height: 1.125rem;
     height: 2.375rem;
 }
 
@@ -52,5 +52,9 @@
 
 .fontsize {
     color: black;
-    font-size: 1.125rem;  
+    font-size: 1.125rem;
+}
+
+.containerCarousel {
+    position: relative;
 }

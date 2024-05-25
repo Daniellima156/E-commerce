@@ -1,10 +1,11 @@
-.containerbannerTwo {
+.containerBannerTwo {
     display: flex;
     margin-top: 1.25rem;
     gap: 0.063rem;
+    
 }
 
-.containerbannerTwo > img {
+.containerBannerTwo > img {
     width: 51.5rem;
     height: 33.75rem;
 }
@@ -12,7 +13,7 @@
 .titleOne {
     font-family: "Zefani";
     font-size: 3.125rem;
-    background: radial-gradient(circle, rgba(33, 95, 74, 1) 0%, rgba(212, 155, 112, 1) 100%);
+    background: linear-gradient(90deg, rgba(83,119,87,1) 1%, rgba(184,218,246,1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 3.4375rem;
