@@ -5,3 +5,11 @@
     flex-wrap: wrap;
     gap: 0.625rem;
 }
+
+@media (max-width: 1230px) {
+    .containerReleases {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Define duas colunas iguais */
+        justify-items: center;
+    }
+}

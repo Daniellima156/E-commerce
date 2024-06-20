@@ -4,10 +4,10 @@
     justify-content: space-between;
     top: 0rem;
     left: 0rem;
-    width: 100%;
+    width: 100vw;
     height: 5.938rem;
     background-color: white;
-    box-shadow: 0.313rem 0.625rem 0.625rem -0.188rem rgba(0,0,0,0.1),0rem 0.625rem 0.938rem -0.188rem rgba(0,0,0,0.1);
+    box-shadow: 0.313rem 0.625rem 0.625rem -0.188rem rgba(0, 0, 0, 0.1), 0rem 0.625rem 0.938rem -0.188rem rgba(0, 0, 0, 0.1);
     position: fixed;
     z-index: 1000;
     margin-bottom: 0.063rem;
@@ -20,7 +20,7 @@
     letter-spacing: 0.5rem;
 }
 
-.listaIcon {
+.listIcon {
     display: flex;
     gap: 0.75rem;
     font-size: 1.25rem;
@@ -57,4 +57,126 @@
     font-size: 0.813rem;
     text-transform: capitalize;
     z-index: 1000;
+}
+
+.menuIcon {
+    display: none;
+}
+
+.dropdown {
+    display: none;
+}
+
+@media (max-width: 770px) {
+    .nomeLoja {
+        font-family: "Great Vibes";
+        color: var(--cor-terciaria);
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;
+    }
+
+    .listIcon {
+        font-size: 0.9rem;
+    }
+
+    .searchIcon {
+        font-size: 1rem;
+    }
+
+    .inputsearch {
+        border-bottom: 0.050rem solid #b2b2b2;
+        width: 9.375rem;
+    }
+    .secondHeader {
+        height: 2.2rem;    
+        font-size: 0.713rem; 
+    }
+
+}
+
+@media (max-width: 620px) {
+    .secondHeader {
+        display: none;
+      
+    }
+    .searchIcon {
+        display: none;
+    }
+    .menuIcon {
+        display: flex;
+        font-size: 2.1rem;
+        margin-left: 0.75rem;
+    }
+    .listIcon {
+        font-size: 1.1rem;
+        margin-right: 0.75rem;
+    }
+
+    .nomeLoja {
+        font-family: "Great Vibes";
+        color: var(--cor-terciaria);
+        font-size: 1.7rem;
+        letter-spacing: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    .dropdown {
+        display: flex;
+        flex-direction: column;    
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 20rem;
+        height: 100%;
+        background-color: white;
+        box-shadow: 4px 10px 15px -11px rgba(0,0,0,0.1);
+        
+    }
+    .closeIcon {
+        background-color: #e5e5e5;
+        width: 100%;
+        font-size: 1.8rem;
+        border-top: 1px solid rgb(209, 207, 207);
+        padding-bottom: 5px;
+        height: 25px;
+        
+        
+    }
+    .dropdownList {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 1rem;  
+        font-family: "Roboto";         
+        
+    }
+    .dropdownName {
+        display: flex;
+        width: 20rem;
+        padding: 0px 10px;
+        justify-content: space-between;
+        border-top: 1px solid rgb(225, 225, 225);
+        padding-top: 10px;         
+    }
+    .dropdownNameA {
+        display: flex;
+        width: 20rem;
+        padding: 0px 10px;
+        justify-content: space-between;          
+    }
+    .buttonLogin {
+        display: flex;
+        justify-content: center;
+        color:white;
+        background-color: #2d2d2d;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+        
+    }
+    .rightIcon {       
+        padding: 0 1.7rem;
+    }
+    
 }

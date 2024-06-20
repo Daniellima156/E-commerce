@@ -10,9 +10,9 @@ function BannerTwo() {
 
     return (
         <div className={styles.containerBannerTwo}>
-            <img src={BannerTwoHome} />
+            <img className={styles.banner} src={BannerTwoHome} />
             <div className={styles.tittleText}>
-                <h1 className={styles.titleOne}>Aurora Vibrante Brilhante </h1>
+                <h1 className={styles.titleOne}>Vibrante</h1>
                 <div className={styles.blocos}>
                     <div className={styles.bloco}><Link><img className={styles.imgMosaico} src={mosaicoOne} /><p>Confira</p></Link></div>
                     <div className={styles.bloco}><Link><img className={styles.imgMosaico} src={mosaicoTwo} /><p>Confira</p></Link></div>

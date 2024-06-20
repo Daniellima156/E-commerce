@@ -1,0 +1,15 @@
+html, body {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    height: 5000px;
+    font-family: 'Pt serif', 'Times New Roman', Times, serif;
+ 
+   
+    
+}
+
+.swiper-wrapper {
+    margin-left: 3.2rem;
+}

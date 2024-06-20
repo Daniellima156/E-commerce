@@ -1,10 +1,6 @@
-.containerMain {
-    height: 28.75rem;
+.containerCarrousel {
+    height: 29.75rem;
     width: 16.25rem;
-    border-radius: 1.5625rem;
-    overflow: hidden;
-    margin-left: 7rem;
-    max-width: 100%;
 
 }
 
@@ -15,26 +11,30 @@
     height: 18.75rem;
     width: 16.25rem;
     border-radius: 0.3125rem;
+
 }
 
 
 
 .containerDown {
-    background-color: #F4FAFF;
+    background-color: #c3e1fa;
     width: 16.25rem;
-    height: 10rem;
+    height: 11rem;
     padding-top: 0.0625rem;
     font-family: 'Courier Prime';
     line-height: 0.625rem;
     text-align: center;
-    box-shadow: 0px 0px 0.0625rem 0px;
+    border-radius: 0.8rem;
+
+
 }
 
 .containerName {
-    font-family: monospace;
+   
     margin-left: 0.625rem;
     font-size: 0.875rem;
     line-height: 1.125rem;
+    font-size: bold;
     height: 2.375rem;
 }
 
@@ -48,13 +48,43 @@
     font-size: 0.8125rem;
     color: gray;
     line-height: 1.5625rem;
+    
 }
 
 .fontsize {
     color: black;
     font-size: 1.125rem;
+    font-size: bold;
+    
 }
 
-.containerCarousel {
-    position: relative;
+
+.buttonPrev,
+.buttonNext {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    z-index: 1;
 }
+
+.buttonPrev {
+    left: 40px;
+    top: 50%;
+}
+
+.buttonNext {
+    right: 5px;
+
+}
+
+.containerMain {
+    display: flex;
+   
+    width: 100%;
+}
+
