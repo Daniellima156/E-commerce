@@ -9,8 +9,14 @@
     background-color: white;
     box-shadow: 0.313rem 0.625rem 0.625rem -0.188rem rgba(0, 0, 0, 0.1), 0rem 0.625rem 0.938rem -0.188rem rgba(0, 0, 0, 0.1);
     position: fixed;
-    z-index: 1000;
+    z-index: 100;
     margin-bottom: 0.063rem;
+
+}
+
+.blackground {
+    display: none;
+
 }
 
 .nomeLoja {
@@ -24,13 +30,13 @@
     display: flex;
     gap: 0.75rem;
     font-size: 1.25rem;
-    margin-right: 1.875rem;
+    margin-right: 2.3rem;
 }
 
 .searchIcon {
     display: flex;
-    font-size: 1.563rem;
-    margin-left: 1.875rem;
+    font-size: 1rem;
+    margin-left: 2.3rem;
     gap: 0.313rem;
 }
 
@@ -40,6 +46,8 @@
     padding-bottom: 0.125rem;
     outline: none;
     width: 9.375rem;
+    text-align: center;
+   
 }
 
 .secondHeader {
@@ -56,7 +64,7 @@
     font-family: 'Courier Prime';
     font-size: 0.813rem;
     text-transform: capitalize;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .menuIcon {
@@ -87,26 +95,39 @@
         border-bottom: 0.050rem solid #b2b2b2;
         width: 9.375rem;
     }
+
     .secondHeader {
-        height: 2.2rem;    
-        font-size: 0.713rem; 
+        height: 2.2rem;
+        font-size: 0.713rem;
     }
 
 }
 
 @media (max-width: 620px) {
-    .secondHeader {
+
+    .secondHeader,
+    .secondHeaderLink {
         display: none;
-      
+
+
     }
+
+    .containerHeader {
+        box-shadow: none;
+    }
+
     .searchIcon {
         display: none;
     }
+
     .menuIcon {
         display: flex;
         font-size: 2.1rem;
         margin-left: 0.75rem;
+        z-index: 1000;
+
     }
+
     .listIcon {
         font-size: 1.1rem;
         margin-right: 0.75rem;
@@ -122,61 +143,148 @@
 
     .dropdown {
         display: flex;
-        flex-direction: column;    
+        flex-direction: column;
         position: fixed;
         top: 0;
         left: 0;
         width: 20rem;
         height: 100%;
         background-color: white;
-        box-shadow: 4px 10px 15px -11px rgba(0,0,0,0.1);
-        
+        z-index: 103;
+
+
     }
+
     .closeIcon {
         background-color: #e5e5e5;
         width: 100%;
         font-size: 1.8rem;
         border-top: 1px solid rgb(209, 207, 207);
-        padding-bottom: 5px;
+        padding-bottom: 2px;
         height: 25px;
-        
-        
     }
+
     .dropdownList {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        font-size: 1rem;  
-        font-family: "Roboto";         
-        
+        font-size: 1rem;
+        font-family: "Roboto";
+
     }
+
     .dropdownName {
         display: flex;
-        width: 20rem;
+        width: 18rem;
         padding: 0px 10px;
         justify-content: space-between;
         border-top: 1px solid rgb(225, 225, 225);
-        padding-top: 10px;         
+        padding-top: 10px;
     }
+
     .dropdownNameA {
         display: flex;
-        width: 20rem;
+        width: 18rem;
         padding: 0px 10px;
-        justify-content: space-between;          
+        justify-content: space-between;
     }
+
     .buttonLogin {
         display: flex;
         justify-content: center;
-        color:white;
+        color: white;
         background-color: #2d2d2d;
         width: 100%;
         padding-top: 10px;
         padding-bottom: 10px;
-        
-        
     }
-    .rightIcon {       
-        padding: 0 1.7rem;
+
+    .visible {
+        display: flex;
     }
-    
+
+    .hidden {
+        display: none;
+    }
+
+    .secondHeaderContainerSearch {
+        display: flex;
+        width: 90%;
+        height: 2.625rem;
+        position: fixed;
+        top: 5.6785rem;
+        align-items: center;
+
+        margin-left: 32px;
+
+    }
+
+    .secondHeaderSearchIcon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 15px;
+    }
+
+    .secondHeaderSearch,
+    .secondHeaderSearch::placeholder {
+        border: none;
+        border-bottom: 1px solid #808080;
+        padding: 10px;
+        outline: none;
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .blackground {
+        position: fixed;
+        min-height: 100vh;
+        width: 100%;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        z-index: 102;
+        background-color: rgb(37, 37, 37);
+    }
+
+
+
+
+}
+
+@media (max-width: 450px) {
+    .nomeLoja {
+        font-size: 1.1rem;
+    }
+    .listIcon {
+        font-size: 0.8rem;
+    }
+    .menuIcon {
+        font-size: 1.8rem;
+    }
+    .secondHeaderContainerSearch {
+        margin-left: 24px;
+    }
+
+
+}
+
+@media (max-width: 370px) {
+    .nomeLoja {
+        font-size: 1rem;
+    }
+    .listIcon {
+        font-size: 0.6rem;
+       
+    }
+    .menuIcon {
+        font-size: 1.4rem;
+    }
+
+    .secondHeaderContainerSearch {
+        margin-left: 19px;
+    }
 }

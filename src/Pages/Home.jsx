@@ -6,6 +6,9 @@ import Popular from '../components/Popular/Popular';
 import BannerTwo from '../components/Banner/BannerTwo';
 import Information from '../components/Information/Information';
 import Carousel from '../components/Carousel/Carousel';
+import CartShop from '../components/CartShop/CartShop';
+import Bag from '../components/CartShop/Bag';
+import Cards from '../components/Cards/Cards';
 
 function Home(){ 
   return (
@@ -18,7 +21,8 @@ function Home(){
       <Popular titulo='Nova Coleçâo' subTitulo='Confira a Nova Coleçâo de Junho!'/>
       <BannerTwo/>
       <Information/>
-      
+      <Bag/>
+     
       
     </div>  
   )

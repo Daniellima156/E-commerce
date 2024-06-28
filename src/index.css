@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 
 @font-face {
-    font-family: 'Marissa'; /* Defina um nome para sua fonte */
-    src: url('caminho/para/sua/fonte.woff2') format('woff2'), /* Caminho para o arquivo WOFF2 */
-         url('./Fontes/Morissa.ttf') format('truetype'); /* Caminho para o arquivo WOFF */
-    /* Se necessário, adicione mais formatos de fonte aqui, como TTF ou EOT */
+    font-family: 'Marissa'; 
+    src: url('caminho/para/sua/fonte.woff2') format('woff2'), 
+         url('./Fontes/Morissa.ttf') format('truetype'); 
+   
 }
 
 @font-face {
-    font-family: 'Zefani'; /* Defina um nome para sua fonte */
-    src: url('caminho/para/sua/fonte.woff2') format('woff2'), /* Caminho para o arquivo WOFF2 */
-         url('./Fontes/Zefani.otf') format('opentype'); /* Caminho para o arquivo WOFF */
-    /* Se necessário, adicione mais formatos de fonte aqui, como TTF ou EOT */
+    font-family: 'Zefani'; 
+    src: url('caminho/para/sua/fonte.woff2') format('woff2'), 
+         url('./Fontes/Zefani.otf') format('opentype');
+    
 }
 
 

@@ -11,9 +11,9 @@
     flex-direction: column;
     justify-content: center;
     text-align: left;
-    font-family: monospace;
+    font-family: "jost";
     font-size: 0.875rem;
-    text-transform: capitalize;
+    
 }
 
 .name {
@@ -41,3 +41,44 @@
     background-image: linear-gradient(to right, transparent, #000, transparent);
     background-size: 100% 0.125rem;
 }
+
+.containerButtons {
+    display: flex;
+    gap: 0.313rem;
+    margin-top: 1.25rem;
+    justify-content: center;
+}
+
+.buttonBuy button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.563rem;
+    cursor: pointer;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-quarta);
+    width: 12.5rem;
+    height: 2.5rem;
+    border-radius: 0.625rem;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 1.063rem;
+    letter-spacing: 0.063rem;
+}
+
+.buttonCart button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3.125rem;
+    cursor: pointer;
+    color: var(--cor-quarta);
+    background-color: #096746;
+    width: 3.125rem;
+    height: 2.5rem;
+    border-radius: 0.625rem;
+    border: none;
+    font-size: 1.188rem;
+}
+
+
