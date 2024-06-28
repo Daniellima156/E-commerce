@@ -10,7 +10,7 @@ function Bag() {
     return (
         <div>
             <div className={styles.containerCartShop}>
-                <div className={styles.rowCart}>
+                <div className={styles.titleCart}>
                     <FiShoppingBag />
                     <h1 className={styles.nameCart}>Carrinho({carrinho.length})</h1>
                 </div>

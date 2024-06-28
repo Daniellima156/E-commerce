@@ -3,7 +3,7 @@
     flex-direction: column;
     background-color: white;
     min-height: 100%;
-    width: 32rem;
+    width: 25rem;
     z-index: 100;
     position: fixed;
     right: 0;
@@ -12,17 +12,16 @@
     justify-content:flex-start;
     align-items: center;
     margin-top: 0.1rem;
-   
 }
 
-.rowCart {
+.titleCart {
     display: flex;
     align-items: center;
     font-size: 1rem;
     justify-content: center;
     margin-top: 10px;
     gap: 7px;
-    margin-right: 22.9rem;
+    margin-right: 15rem;
 }
 .nameCart{
     display: flex;
