@@ -12,6 +12,7 @@
     justify-content:flex-start;
     align-items: center;
     margin-top: 0.1rem;
+    
 }
 
 .titleCart {
@@ -32,4 +33,32 @@
     margin: 0px;
     margin-top: 5px;
     font-weight: lighter;
+}
+
+.closeIcon {
+    font-size: 22px;
+    font-family: "Jost";
+    font-weight: 200;
+    position: relative;
+    left: 220px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+.fullScreen{
+    position: fixed;
+    min-height: 100vh;
+    width: 100%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 102;
+    background-color: rgba(0, 0, 0, 0.5);
 }

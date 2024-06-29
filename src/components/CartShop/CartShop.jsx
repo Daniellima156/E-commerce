@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
 import styles from './CartShop.module.css';
 import PropTypes from "prop-types";
-import AppContext from '../../context/AppContext';
 import { FaRegTrashAlt } from "react-icons/fa";
 
 function CartShop({ data }) {
     const { img, name, price } = data;
+    
+
+   
 
     return (
         <div>

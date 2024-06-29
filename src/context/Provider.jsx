@@ -3,11 +3,13 @@ import propTypes from "prop-types"
 import AppContext from "./AppContext";
 
 function Provider({ children }) {
- 
+    const [isMenuVisibleCart, setIsMenuVisibleCart] = useState(false);
     const [carrinho, setCarrinho] = useState([]);
     const value = {     
         carrinho,
-        setCarrinho
+        setCarrinho,
+        isMenuVisibleCart,
+        setIsMenuVisibleCart,
     }
     return (
         <AppContext.Provider value = {value}>

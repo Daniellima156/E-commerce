@@ -6,10 +6,11 @@ import styles from './Cards.module.css';
 import propTypes from "prop-types";
 import AppContext from '../../context/AppContext';
 
-function Cards({ data }) {
+function Cards({ data, }) {
     const [isHovered, setIsHovered] = useState(false);
-    const {carrinho, setCarrinho} = useContext(AppContext)
-    const { id, img, name, price } = data; 
+    const { carrinho, setCarrinho, isMenuVisibleCart,setIsMenuVisibleCart } = useContext(AppContext);
+    const { id, img, name, price } = data;
+    
 
     const handleMouseEnter = () => {
         setIsHovered(true);
@@ -18,10 +19,18 @@ function Cards({ data }) {
     const handleMouseLeave = () => {
         setIsHovered(false);
     };
-    const handleAddCart = () => {
-        setCarrinho([...carrinho,data])
 
-    }
+    const toggleMenuVisibilityCart = () => {
+        setIsMenuVisibleCart(!isMenuVisibleCart)
+      }
+
+    const handleAddCart = () => {
+        setCarrinho([...carrinho, data]);
+        toggleMenuVisibilityCart()
+        
+    };
+
+   
 
     return (
         <div className={styles.containerCard}>
@@ -57,9 +66,13 @@ function Cards({ data }) {
 }
 
 Cards.propTypes = {
-    data: propTypes.shape([]
-
-    ).isRequired,
+    data: propTypes.shape({
+        id: propTypes.number.isRequired,
+        img: propTypes.string.isRequired,
+        name: propTypes.string.isRequired,
+        price: propTypes.number.isRequired,
+    }).isRequired,
+   
 };
 
 export default Cards;
