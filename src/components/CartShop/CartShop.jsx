@@ -1,14 +1,20 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import styles from './CartShop.module.css';
 import PropTypes from 'prop-types';
 import { FaRegTrashAlt } from 'react-icons/fa';
 import AppContext from '../../context/AppContext';
 
-function CartShop({ data, quantity }) {
-    const { id, img, name, price } = data;
-    
+function CartShop({ data }) {
+    const { id, img, name, price, quantity } = data;   
     const { carrinho, setCarrinho } = useContext(AppContext);
-    const [count, setCount] = useState(quantity || 1); // Definindo count com valor padrão de quantity ou 1
+    const [count, setCount] = useState(quantity || 1);
+
+    useEffect(() => {
+        const updatedItems = carrinho.map(item =>
+            item.id === id ? { ...item, quantity: count } : item
+        );
+        setCarrinho(updatedItems);
+    }, [count]);
 
     const incrementNumber = () => {
         setCount(count + 1);
@@ -26,6 +32,8 @@ function CartShop({ data, quantity }) {
         const updatedItems = carrinho.filter(item => item.id !== id);
         setCarrinho(updatedItems);
     };
+
+    
 
     return (
         <div>
@@ -55,8 +63,8 @@ CartShop.propTypes = {
         img: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
         price: PropTypes.number.isRequired,
+        quantity: PropTypes.number,
     }).isRequired,
-    quantity: PropTypes.number.isRequired, 
 };
 
 export default CartShop;
