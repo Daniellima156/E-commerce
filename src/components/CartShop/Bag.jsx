@@ -34,8 +34,9 @@ function Bag() {
                 className={`${styles.containerCartShop} ${isMenuVisibleCart ? styles.visible : styles.hidden}`}
             >
                 <div className={styles.titleCart}>
-                    <FiShoppingBag />
-                    <h1 className={styles.nameCart}>Carrinho ({carrinhoTotalItems})</h1>
+                    <FiShoppingBag className={styles.bagIconTitle}/>
+                    <h1 className={styles.nameCart}>Carrinho</h1>
+                    <h1 className={styles.nameCart}>({carrinhoTotalItems})</h1>
                     <h1 className={styles.closeIcon} onClick={toggleMenuVisibilityCart}>x</h1>
                 </div>
                 <div className={styles.sideScrolling}>
